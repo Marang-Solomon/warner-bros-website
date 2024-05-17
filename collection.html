@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WARNER BROS</title>
+    <link rel="stylesheet" href="path/to/your/bootstrap-icons.css">
+    <link rel="stylesheet" href="mystyle.css">
+    <style>
+        .genre-table {
+            width: 50%;
+            margin-bottom: 20px;
+            border-collapse: collapse;
+        }
+
+        .genre-table th, .genre-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .genre-table th {
+            color: white;
+        }
+
+        .arrow {
+            font-size: 25px;
+            cursor: pointer;
+            color: lightgray;
+            opacity: 0.5;
+        }
+
+        .arrow:hover {
+            opacity: 1;
+        }
+
+        .movie-list {
+            display: flex;
+            overflow: hidden;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .movie-list-item {
+            margin-right: 30px;
+            position: relative;
+            width: 150px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <span class="logo">WARNER BROS</span>
+            </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li><a href="index.html" class="menu-list-item active">Home</a></li>
+                    <li><a href="movies.html" class="menu-list-item">Movies</a></li>
+                    <li><a href="tvshows.html" class="menu-list-item">TV Shows</a></li>
+                    <li><a href="gamesapps.html" class="menu-list-item">Games & Apps</a></li>
+                    <li><a href="collection.html" class="menu-list-item">Collection</a></li>
+                    <li><a href="feedback.html" class="menu-list-item">Feedback</a></li>
+                </ul>
+            </div>
+            <div class="profile-container">
+                <div class="profile-text-container">Profile</div>
+                <img src="img/user.png" alt="Profile" class="profile-picture">
+            </div>
+        </div>
+    </nav>
+    
+    <main>
+        <table class="genre-table">
+            <thead>
+                <tr>
+                    <th colspan="5">ACTION MOVIES</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="movie-list-item">
+                            <img src="img/dam.png" alt="Damsel" class="movie-list-item-img">
+                            <div class="movie-list-item-title">DAMSEL</div>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="movie-list-item">
+                            <img src="img/6 underground.png" alt="6 Underground" class="movie-list-item-img">
+                            <div class="movie-list-item-title">6 UNDERGROUND</div>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="movie-list-item">
+                            <img src="img/60 minutes.png" alt="60 Minutes" class="movie-list-item-img">
+                            <div class="movie-list-item-title">60 MINUTES</div>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="movie-list-item">
+                            <img src="img/extinction.png" alt="Extinction" class="movie-list-item-img">
+                            <div class="movie-list-item-title">EXTINCTION</div>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="movie-list-item">
+                            <img src="img/john wick.png" alt="John Wick" class="movie-list-item-img">
+                            <div class="movie-list-item-title">JOHN WICK</div>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <table class="genre-table">
+            <thead>
+                <tr>
+                    <th colspan="5">COMEDY MOVIES</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="movie-list-item">
+                            <img src="img/deadpool.png" alt="Deadpool" class="movie-list-item-img">
+                            <div class="movie-list-item-title">DEADPOOL</div>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="movie-list-item">
+                            <img src="img/jumanji.png" alt="Jumanji" class="movie-list-item-img">
+                            <div class="movie-list-item-title">JUMANJI</div>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="movie-list-item">
+                            <img src="img/lift.png" alt="Lift" class="movie-list-item-img">
+                            <div class="movie-list-item-title">LIFT</div>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="movie-list-item">
+                            <img src="img/good boys.png" alt="Good Boys" class="movie-list-item-img">
+                            <div class="movie-list-item-title">GOOD BOYS</div>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="movie-list-item">
+                            <img src="img/jurassic world.png" alt="Jurassic World" class="movie-list-item-img">
+                            <div class="movie-list-item-title">JURASSIC WORLD</div>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <table class="genre-table">
+            <thead>
+                <tr>
+                    <th colspan="5">DRAMA MOVIES</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="movie-list-item">
+                            <img src="img/unchartered.png" alt="Uncharted" class="movie-list-item-img">
+                            <div class="movie-list-item-title">UNCHARTED</div>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="movie-list-item">
+                            <img src="img/quite place.png" alt="A Quiet Place" class="movie-list-item-img">
+                            <div class="movie-list-item-title">A QUIET PLACE</div>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="movie-list-item">
+                            <img src="img/awake.png" alt="Awake" class="movie-list-item-img">
+                            <div class="movie-list-item-title">AWAKE</div>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="movie-list-item">
+                            <img src="img/creed.png" alt="Creed" class="movie-list-item-img">
+                            <div class="movie-list-item-title">CREED</div>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="movie-list-item">
+                            <img src="img/lucky one.png" alt="The Lucky One" class="movie-list-item-img">
+                            <div class="movie-list-item-title">THE LUCKY ONE</div>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Warner Bros. All rights reserved.</p>
+        <p>Follow us</p>
+        <a href="https://www.instagram.com/warnerbrosentertainment" target="_blank" aria-label="Instagram"><i class="bi bi-instagram"></i></a>&nbsp;&nbsp;&nbsp;
+        <a href="https://www.youtube.com/user/WarnerBrosOnline" target="_blank" aria-label="YouTube"><i class="bi bi-youtube"></i></a>&nbsp;&nbsp;&nbsp;
+        <a href="https://www.facebook.com/warnerbrosent" target="_blank" aria-label="Facebook"><i class="bi bi-facebook"></i></a>&nbsp;&nbsp;&nbsp;
+        <a href="https://twitter.com/warnerbros" target="_blank" aria-label="Twitter"><i class="bi bi-twitter"></i></a>&nbsp;&nbsp;&nbsp;
+        <a href="https://www.linkedin.com/company/warner-bros-entertainment" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>&nbsp;&nbsp;&nbsp;
+        <a href="https://www.pinterest.com/warnerbros" target="_blank" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>&nbsp;&nbsp;&nbsp;
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

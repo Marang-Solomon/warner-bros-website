@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - Warner Bros</title>
+    <link rel="stylesheet" href="path/to/your/bootstrap-icons.css">
+    <link rel="stylesheet" href="mystyle.css">
+    <style>
+        body {
+            font-family: "Sengui UI", sans-serif;
+        }
+
+        .container {
+            max-width: 9000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .feedback-form {
+            margin-bottom: 90px;
+        }
+
+        .feedback-form h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .feedback-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .feedback-form input, .feedback-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        .feedback-form button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .feedback-form button:hover {
+            background-color: #555;
+        }
+
+        .feedback-messages {
+            margin-top: 40px;
+        }
+
+        .feedback-message {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .feedback-message h3 {
+            margin: 0 0 10px;
+            font-size: 18px;
+        }
+
+        .feedback-message p {
+            margin: 0;
+            font-size: 16px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        footer i {
+            font-size: 24px;
+            margin: 0 10px;
+            color: white;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <span class="logo">WARNER BROS</span>
+            </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li><a href="index.html" class="menu-list-item active">Home<a></li>
+                        <li><a href="movies.html" class="menu-list-item active">Movies</a></li>
+                        <li><a href="tv shows.html" class="menu-list-item active">TV Shows</a></li>
+                        <li><a href="games&apps.html" class="menu-list-item active">Games&Apps</a></li>
+                        <li><a href="collection.html" class="menu-list-item active">Collection</a></li>
+                        <li><a href="feedback.html" class="menu-list-item active">Feedback</a></li>
+                </ul>
+            </div>
+            <div class="profile-container">
+                <div class="profile-text-container">Profile</div>
+                <img src="img/user.png" alt="Profile" class="profile-picture">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="feedback-form">
+            <h2>Submit Your Feedback</h2>
+            <form id="feedbackForm">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="8" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div class="feedback-messages" id="feedbackMessages">
+            <h2>Feedback Messages</h2>
+            <!-- Feedback messages will be inserted here -->
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Warner Bros. All rights reserved.</p>
+        <p>Follow us</p>
+        <a href="https://www.instagram.com/warnerbrosentertainment" target="_blank" aria-label="Instagram"><i class="bi bi-instagram"></i></a>&nbsp;&nbsp;&nbsp;
+        <a href="https://www.youtube.com/user/WarnerBrosOnline" target="_blank" aria-label="YouTube"><i class="bi bi-youtube"></i></a>&nbsp;&nbsp;&nbsp;
+        <a href="https://www.facebook.com/warnerbrosent" target="_blank" aria-label="Facebook"><i class="bi bi-facebook"></i></a>&nbsp;&nbsp;&nbsp;
+        <a href="https://twitter.com/warnerbros" target="_blank" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>&nbsp;&nbsp;&nbsp;
+        <a href="https://www.linkedin.com/company/warner-bros-entertainment" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>&nbsp;&nbsp;&nbsp;
+        <a href="https://pin.it/2JUZkU4TT" target="_blank" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>&nbsp;&nbsp;&nbsp;
+    </footer> 
+
+    <script>
+        document.getElementById('feedbackForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            const feedbackMessage = document.createElement('div');
+            feedbackMessage.classList.add('feedback-message');
+            
+            const feedbackTitle = document.createElement('h3');
+            feedbackTitle.textContent = name + ' (' + email + ')';
+            feedbackMessage.appendChild(feedbackTitle);
+            
+            const feedbackContent = document.createElement('p');
+            feedbackContent.textContent = message;
+            feedbackMessage.appendChild(feedbackContent);
+            
+            document.getElementById('feedbackMessages').appendChild(feedbackMessage);
+
+            // Clear the form
+            document.getElementById('feedbackForm').reset();
+        });
+    </script>
+</body>
+</html>

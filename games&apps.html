@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WARNER BROS</title>
+    <link rel="stylesheet" href="path/to/your/bootstrap-icons.css">
+    <link rel="stylesheet" href="path/to/your/style.css">
+    <style>
+        .logo-container {
+            flex: 1;
+        }
+
+        .logo {
+            font-size: 21.6px;
+            color: red;
+        }
+
+        .genre-table {
+            width: 100%;
+            margin-bottom: 20px;
+            border-collapse: collapse;
+        }
+
+        .genre-table th, .genre-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .genre-table th {
+            background-color: #333;
+            color: white;
+        }
+
+        .item-list-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .item-list-item-img {
+            width: 100%;
+            max-width: 150px;
+            height: auto;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .item-list-item-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .item-list-item-button {
+            padding: 10px 20px;
+            background-color: red;
+            color: white;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .item-list-item-button:hover {
+            background-color: darkred;
+        }
+
+        .menu-list {
+            display: flex;
+            list-style: none;
+            padding: 0;
+        }
+
+        .menu-list-item {
+            margin-right: 20px;
+        }
+
+        .featured-content {
+            height: 70vh;
+            padding: 50px;
+            background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('img/fifa.png') no-repeat center/cover;
+            position: relative;
+        }
+
+        .featured-button {
+            background-color: grey;
+            color: black;
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+            font-weight: bold;
+        }
+
+        .featured-button:hover {
+            background-color: darkgrey;
+        }
+
+        .profile-container {
+            flex: 2;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .profile-text-container {
+            margin: 0 20px;
+        }
+
+        .profile-picture {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f1f1f1;
+        }
+
+        footer p {
+            margin: 10px 0;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <span class="logo">WARNER BROS</span>
+            </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li><a href="index.html" class="menu-list-item active">Home</a></li>
+                    <li><a href="movies.html" class="menu-list-item">Movies</a></li>
+                    <li><a href="tv-shows.html" class="menu-list-item">TV Shows</a></li>
+                    <li><a href="games-apps.html" class="menu-list-item">Games & Apps</a></li>
+                    <li><a href="collection.html" class="menu-list-item">Collection</a></li>
+                    <li><a href="feedback.html" class="menu-list-item">Feedback</a></li>
+                </ul>
+            </div>
+            <div class="profile-container">
+                <div class="profile-text-container">Profile</div>
+                <img src="img/user.png" alt="Profile" class="profile-picture">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="content-container">
+            <div class="featured-content">
+                <button class="featured-button" style="position: absolute; top: 500px; right: 1120px; font-size: 16px; width: 150px; height: 43px;">MORE INFO</button>
+                <button class="featured-button" style="position: absolute; top: 500px; font-size: 20px; width: 130px;">PLAY</button>
+            </div>
+            
+            <table class="genre-table">
+                <thead>
+                    <tr>
+                        <th colspan="3">ACTION GAMES</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="item-list-item">
+                                <img src="img/call of duty.png" alt="Call of Duty" class="item-list-item-img">
+                                <div class="item-list-item-title">CALL OF DUTY</div>
+                                <button class="item-list-item-button">Play Now</button>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="item-list-item">
+                                <img src="img/star wars.png" alt="Star Wars" class="item-list-item-img">
+                                <div class="item-list-item-title">STAR WARS</div>
+                                <button class="item-list-item-button">Play Now</button>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="item-list-item">
+                                <img src="img/asphalt.png" alt="Asphalt 9" class="item-list-item-img">
+                                <div class="item-list-item-title">ASPHALT 9</div>
+                                <button class="item-list-item-button">Play Now</button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <table class="genre-table">
+                <thead>
+                    <tr>
+                        <th colspan="3">PUZZLE GAMES</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="item-list-item">
+                                <img src="img/best fiends.png" alt="Best Fiends" class="item-list-item-img">
+                                <div class="item-list-item-title">BEST FIENDS</div>
+                                <button class="item-list-item-button">Play Now</button>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="item-list-item">
+                                <img src="img/candy crush.png" alt="Candy Crush" class="item-list-item-img">
+                                <div class="item-list-item-title">CANDY CRUSH</div>
+                                <button class="item-list-item-button">Play Now</button>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="item-list-item">
+                                <img src="img/stick man.png" alt="Stickman" class="item-list-item-img">
+                                <div class="item-list-item-title">STICKMAN</div>
+                                <button class="item-list-item-button">Play Now</button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="genre-table">
+                <thead>
+                    <tr>
+                        <th colspan="3">PRODUCTIVITY GAMES</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="item-list-item">
+                                <img src="img/roblox.png" alt="Roblox" class="item-list-item-img">
+                                <div class="item-list-item-title">ROBLOX</div>
+                                <button class="item-list-item-button">Play Now</button>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="item-list-item">
+                                <img src="img/sims 4.png" alt="Sims 4" class="item-list-item-img">
+                                <div class="item-list-item-title">SIMS 4</div>
+                                <button class="item-list-item-button">Play Now</button>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="item-list-item">
+                                <img src="img/minecraft.png" alt="Minecraft" class="item-list-item-img">
+                                <div class="item-list-item-title">MINECRAFT</div>
+                                <button class="item-list-item-button">Play Now</button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="genre-table">
+                <thead>
+                    <tr>
+                        <th colspan="3">SOCIAL MEDIA APPS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="item-list-item">
+                                <img src="img/ig.png" alt="Instagram" class="item-list-item-img">
+                                <div class="item-list-item-title">INSTAGRAM</div>
+                                <button class="item-list-item-button">Get App</button>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="item-list-item">
+                                <img src="img/fb.png" alt="Facebook" class="item-list-item-img">
+                                <div class="item-list-item-title">FACEBOOK</div>
+                                <button class="item-list-item-button">Get App</button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Warner Bros. All rights reserved.</p>
+        <p>Follow us</p>
+        <a href="https://www.instagram.com/warnerbrosentertainment" target="_blank" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.youtube.com/user/WarnerBrosOnline" target="_blank" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+        <a href="https://www.facebook.com/warnerbrosent" target="_blank" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://twitter.com/warnerbros" target="_blank" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+        <a href="https://www.linkedin.com/company/warner-bros-entertainment" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.pinterest.com/warnerbros" target="_blank" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+    </footer>
+
+    <script src="path/to/your/script.js"></script>
+</body>
+</html>
