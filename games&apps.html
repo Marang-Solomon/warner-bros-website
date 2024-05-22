@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="mystyle.css">
     <title>WARNER BROS</title>
-    <link rel="stylesheet" href="path/to/your/bootstrap-icons.css">
-    <link rel="stylesheet" href="path/to/your/style.css">
     <style>
         .logo-container {
             flex: 1;
@@ -43,14 +44,14 @@
 
         .item-list-item-img {
             width: 100%;
-            max-width: 150px;
-            height: auto;
+            max-width: 170px;
+            height: 170px;
             object-fit: cover;
             border-radius: 10px;
         }
 
         .item-list-item-title {
-            font-size: 16px;
+            font-size: 15px;
             font-weight: bold;
             margin-top: 10px;
         }
@@ -66,7 +67,7 @@
         }
 
         .item-list-item-button:hover {
-            background-color: darkred;
+            background-color:red;
         }
 
         .menu-list {
@@ -82,7 +83,7 @@
         .featured-content {
             height: 70vh;
             padding: 50px;
-            background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('img/fifa.png') no-repeat center/cover;
+            background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('images/fifa.png') no-repeat center/cover;
             position: relative;
         }
 
@@ -117,11 +118,27 @@
             border-radius: 50%;
             object-fit: cover;
         }
+        .button {
+            display: inline-block;
+        }
+        .btn1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn1 i {
+            font-size: 20px;
+        }
 
         footer {
             text-align: center;
             padding: 20px;
-            background-color: #f1f1f1;
+            background-color: grey;
         }
 
         footer p {
@@ -134,30 +151,34 @@
         }
 
         footer a:hover {
-            text-decoration: underline;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
+    <header>
     <div class="navbar">
         <div class="navbar-container">
             <div class="logo-container">
-                <span class="logo">WARNER BROS</span>
+                <h1 class="logo">WARNER BROS</h1>
             </div>
             <div class="menu-container">
                 <ul class="menu-list">
                     <li><a href="index.html" class="menu-list-item active">Home</a></li>
-                    <li><a href="movies.html" class="menu-list-item">Movies</a></li>
-                    <li><a href="tv-shows.html" class="menu-list-item">TV Shows</a></li>
-                    <li><a href="games-apps.html" class="menu-list-item">Games & Apps</a></li>
-                    <li><a href="collection.html" class="menu-list-item">Collection</a></li>
-                    <li><a href="feedback.html" class="menu-list-item">Feedback</a></li>
+                    <li><a href="movies.html" class="menu-list-item active">Movies</a></li>
+                    <li><a href="tv shows.html" class="menu-list-item active">TV Shows</a></li>
+                    <li><a href="games&apps.html" class="menu-list-item active">Games & Apps</a></li>
+                    <li><a href="collection.html" class="menu-list-item active">Collection</a></li>
+                    <li><a href="feedback.html" class="menu-list-item active">Feedback</a></li>
                 </ul>
             </div>
             <div class="profile-container">
                 <div class="profile-text-container">Profile</div>
-                <img src="img/user.png" alt="Profile" class="profile-picture">
+                <img src="images/user.png" alt="Profile" class="profile-picture">
             </div>
+        </div>
+        <div class="button">
+            <span class="btn1"><i class="bi bi-search" style="width: 10px; height:10px;"></i></span>
         </div>
     </div>
 
@@ -167,7 +188,8 @@
                 <button class="featured-button" style="position: absolute; top: 500px; right: 1120px; font-size: 16px; width: 150px; height: 43px;">MORE INFO</button>
                 <button class="featured-button" style="position: absolute; top: 500px; font-size: 20px; width: 130px;">PLAY</button>
             </div>
-            
+            </header>
+            <section>            
             <table class="genre-table">
                 <thead>
                     <tr>
@@ -178,22 +200,29 @@
                     <tr>
                         <td>
                             <div class="item-list-item">
-                                <img src="img/call of duty.png" alt="Call of Duty" class="item-list-item-img">
+                                <img src="images/call of duty.png" alt="Call of Duty" class="item-list-item-img">
                                 <div class="item-list-item-title">CALL OF DUTY</div>
                                 <button class="item-list-item-button">Play Now</button>
                             </div>
                         </td>
                         <td>
                             <div class="item-list-item">
-                                <img src="img/star wars.png" alt="Star Wars" class="item-list-item-img">
+                                <img src="images/star wars.png" alt="Star Wars" class="item-list-item-img">
                                 <div class="item-list-item-title">STAR WARS</div>
                                 <button class="item-list-item-button">Play Now</button>
                             </div>
                         </td>
                         <td>
                             <div class="item-list-item">
-                                <img src="img/asphalt.png" alt="Asphalt 9" class="item-list-item-img">
+                                <img src="images/asphalt.png" alt="Asphalt 9" class="item-list-item-img">
                                 <div class="item-list-item-title">ASPHALT 9</div>
+                                <button class="item-list-item-button">Play Now</button>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="item-list-item">
+                                <img src="images/fortnitee.png" alt="Fortnite" class="item-list-item-img">
+                                <div class="item-list-item-title">FORTNITE</div>
                                 <button class="item-list-item-button">Play Now</button>
                             </div>
                         </td>
@@ -211,22 +240,29 @@
                     <tr>
                         <td>
                             <div class="item-list-item">
-                                <img src="img/best fiends.png" alt="Best Fiends" class="item-list-item-img">
+                                <img src="images/best fiends.png" alt="Best Fiends" class="item-list-item-img">
                                 <div class="item-list-item-title">BEST FIENDS</div>
                                 <button class="item-list-item-button">Play Now</button>
                             </div>
                         </td>
                         <td>
                             <div class="item-list-item">
-                                <img src="img/candy crush.png" alt="Candy Crush" class="item-list-item-img">
+                                <img src="images/candy crush.png" alt="Candy Crush" class="item-list-item-img">
                                 <div class="item-list-item-title">CANDY CRUSH</div>
                                 <button class="item-list-item-button">Play Now</button>
                             </div>
                         </td>
                         <td>
                             <div class="item-list-item">
-                                <img src="img/stick man.png" alt="Stickman" class="item-list-item-img">
+                                <img src="images/stick man.png" alt="Stickman" class="item-list-item-img">
                                 <div class="item-list-item-title">STICKMAN</div>
+                                <button class="item-list-item-button">Play Now</button>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="item-list-item">
+                                <img src="images/super mario.png" alt="Super mario" class="item-list-item-img">
+                                <div class="item-list-item-title">SUPER MARIO</div>
                                 <button class="item-list-item-button">Play Now</button>
                             </div>
                         </td>
@@ -243,22 +279,29 @@
                     <tr>
                         <td>
                             <div class="item-list-item">
-                                <img src="img/roblox.png" alt="Roblox" class="item-list-item-img">
+                                <img src="images/roblox.png" alt="Roblox" class="item-list-item-img">
                                 <div class="item-list-item-title">ROBLOX</div>
                                 <button class="item-list-item-button">Play Now</button>
                             </div>
                         </td>
                         <td>
                             <div class="item-list-item">
-                                <img src="img/sims 4.png" alt="Sims 4" class="item-list-item-img">
+                                <img src="images/sims 4.png" alt="Sims 4" class="item-list-item-img">
                                 <div class="item-list-item-title">SIMS 4</div>
                                 <button class="item-list-item-button">Play Now</button>
                             </div>
                         </td>
                         <td>
                             <div class="item-list-item">
-                                <img src="img/minecraft.png" alt="Minecraft" class="item-list-item-img">
+                                <img src="images/minecraft.png" alt="Minecraft" class="item-list-item-img">
                                 <div class="item-list-item-title">MINECRAFT</div>
+                                <button class="item-list-item-button">Play Now</button>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="item-list-item">
+                                <img src="images/overcooked.png" alt="Overcooked" class="item-list-item-img">
+                                <div class="item-list-item-title">OVERCOOKED</div>
                                 <button class="item-list-item-button">Play Now</button>
                             </div>
                         </td>
@@ -275,14 +318,14 @@
                     <tr>
                         <td>
                             <div class="item-list-item">
-                                <img src="img/ig.png" alt="Instagram" class="item-list-item-img">
+                                <img src="images/ig.png" alt="Instagram" class="item-list-item-img">
                                 <div class="item-list-item-title">INSTAGRAM</div>
                                 <button class="item-list-item-button">Get App</button>
                             </div>
                         </td>
                         <td>
                             <div class="item-list-item">
-                                <img src="img/fb.png" alt="Facebook" class="item-list-item-img">
+                                <img src="images/fb.png" alt="Facebook" class="item-list-item-img">
                                 <div class="item-list-item-title">FACEBOOK</div>
                                 <button class="item-list-item-button">Get App</button>
                             </div>
@@ -292,6 +335,8 @@
             </table>
         </div>
     </div>
+</section>
+    <script src="script.js"></script>
     <footer>
         <p>&copy; 2024 Warner Bros. All rights reserved.</p>
         <p>Follow us</p>
@@ -302,7 +347,5 @@
         <a href="https://www.linkedin.com/company/warner-bros-entertainment" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
         <a href="https://www.pinterest.com/warnerbros" target="_blank" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
     </footer>
-
-    <script src="path/to/your/script.js"></script>
 </body>
 </html>
