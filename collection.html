@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WARNER BROS</title>
-    <link rel="stylesheet" href="path/to/your/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="mystyle.css">
+    <title>WARNER BROS</title>
     <style>
         .genre-table {
             width: 50%;
@@ -36,7 +37,7 @@
 
         .movie-list {
             display: flex;
-            overflow: hidden;
+            overflow:hidden;
             transition: transform 0.5s ease-in-out;
         }
 
@@ -46,32 +47,42 @@
             width: 150px;
             height: 200px;
         }
+        .movie-list-item-img{
+            width: 180px;
+            height: 190px;
+            object-fit: cover;
+            border-radius: 10px;
+
+        }
+        
     </style>
 </head>
 <body>
+    <header>
     <nav class="navbar">
         <div class="navbar-container">
             <div class="logo-container">
-                <span class="logo">WARNER BROS</span>
+                <h1 class="logo">WARNER BROS</h1>
             </div>
             <div class="menu-container">
                 <ul class="menu-list">
                     <li><a href="index.html" class="menu-list-item active">Home</a></li>
-                    <li><a href="movies.html" class="menu-list-item">Movies</a></li>
-                    <li><a href="tvshows.html" class="menu-list-item">TV Shows</a></li>
-                    <li><a href="gamesapps.html" class="menu-list-item">Games & Apps</a></li>
-                    <li><a href="collection.html" class="menu-list-item">Collection</a></li>
-                    <li><a href="feedback.html" class="menu-list-item">Feedback</a></li>
+                    <li><a href="movies.html" class="menu-list-item active">Movies</a></li>
+                    <li><a href="tv shows.html" class="menu-list-item active">TV Shows</a></li>
+                    <li><a href="games&apps.html" class="menu-list-item active">Games & Apps</a></li>
+                    <li><a href="collection.html" class="menu-list-item active">Collection</a></li>
+                    <li><a href="feedback.html" class="menu-list-item active">Feedback</a></li>
                 </ul>
             </div>
             <div class="profile-container">
                 <div class="profile-text-container">Profile</div>
-                <img src="img/user.png" alt="Profile" class="profile-picture">
+                <img src="images/user.png" alt="Profile" class="profile-picture">
             </div>
         </div>
     </nav>
+    </header>
     
-    <main>
+    <section>
         <table class="genre-table">
             <thead>
                 <tr>
@@ -82,36 +93,57 @@
                 <tr>
                     <td>
                         <div class="movie-list-item">
-                            <img src="img/dam.png" alt="Damsel" class="movie-list-item-img">
+                            <img src="images/dam.png" alt="Damsel" class="movie-list-item-img">
                             <div class="movie-list-item-title">DAMSEL</div>
                             <button class="movie-list-item-button">Watch</button>
                         </div>
                     </td>
                     <td>
                         <div class="movie-list-item">
-                            <img src="img/6 underground.png" alt="6 Underground" class="movie-list-item-img">
+                            <img src="images/6 underground.png" alt="6 Underground" class="movie-list-item-img">
                             <div class="movie-list-item-title">6 UNDERGROUND</div>
                             <button class="movie-list-item-button">Watch</button>
                         </div>
                     </td>
                     <td>
                         <div class="movie-list-item">
-                            <img src="img/60 minutes.png" alt="60 Minutes" class="movie-list-item-img">
+                            <img src="images/60 minutes.png" alt="60 Minutes" class="movie-list-item-img">
                             <div class="movie-list-item-title">60 MINUTES</div>
                             <button class="movie-list-item-button">Watch</button>
                         </div>
                     </td>
                     <td>
                         <div class="movie-list-item">
-                            <img src="img/extinction.png" alt="Extinction" class="movie-list-item-img">
+                            <img src="images/extinction.png" alt="Extinction" class="movie-list-item-img">
                             <div class="movie-list-item-title">EXTINCTION</div>
                             <button class="movie-list-item-button">Watch</button>
                         </div>
                     </td>
                     <td>
                         <div class="movie-list-item">
-                            <img src="img/john wick.png" alt="John Wick" class="movie-list-item-img">
+                            <img src="images/john wick.png" alt="John Wick" class="movie-list-item-img">
                             <div class="movie-list-item-title">JOHN WICK</div>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="movie-list-item">
+                            <img src="images/mission impossible.png" alt="Mission impossible" class="movie-list-item-img">
+                            <div class="movie-list-item-title">MISSION IMPOSSIBLE</div>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="movie-list-item">
+                            <img src="images/unbreakable.png" alt="Unbreakable" class="movie-list-item-img">
+                            <div class="movie-list-item-title">UNBREAKABLE</div>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="movie-list-item">
+                            <img src="images/source code.png" alt="Source code" class="movie-list-item-img">
+                            <div class="movie-list-item-title">SOURCE CODE</div>
                             <button class="movie-list-item-button">Watch</button>
                         </div>
                     </td>
@@ -129,36 +161,57 @@
                 <tr>
                     <td>
                         <div class="movie-list-item">
-                            <img src="img/deadpool.png" alt="Deadpool" class="movie-list-item-img">
+                            <img src="images/deadpool.png" alt="Deadpool" class="movie-list-item-img">
                             <div class="movie-list-item-title">DEADPOOL</div>
                             <button class="movie-list-item-button">Watch</button>
                         </div>
                     </td>
                     <td>
                         <div class="movie-list-item">
-                            <img src="img/jumanji.png" alt="Jumanji" class="movie-list-item-img">
+                            <img src="images/jumanji.png" alt="Jumanji" class="movie-list-item-img">
                             <div class="movie-list-item-title">JUMANJI</div>
                             <button class="movie-list-item-button">Watch</button>
                         </div>
                     </td>
                     <td>
                         <div class="movie-list-item">
-                            <img src="img/lift.png" alt="Lift" class="movie-list-item-img">
+                            <img src="images/lift.png" alt="Lift" class="movie-list-item-img">
                             <div class="movie-list-item-title">LIFT</div>
                             <button class="movie-list-item-button">Watch</button>
                         </div>
                     </td>
                     <td>
                         <div class="movie-list-item">
-                            <img src="img/good boys.png" alt="Good Boys" class="movie-list-item-img">
+                            <img src="images/good boys.png" alt="Good Boys" class="movie-list-item-img">
                             <div class="movie-list-item-title">GOOD BOYS</div>
                             <button class="movie-list-item-button">Watch</button>
                         </div>
                     </td>
                     <td>
                         <div class="movie-list-item">
-                            <img src="img/jurassic world.png" alt="Jurassic World" class="movie-list-item-img">
+                            <img src="images/jurassic world.png" alt="Jurassic World" class="movie-list-item-img">
                             <div class="movie-list-item-title">JURASSIC WORLD</div>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="movie-list-item">
+                            <img src="images/project power.png" alt="Project power" class="movie-list-item-img">
+                            <div class="movie-list-item-title">PROJECT POWER</div>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="movie-list-item">
+                            <img src="images/wages of fear.png" alt="Wages of fear" class="movie-list-item-img">
+                            <div class="movie-list-item-title">WAGES OF FEAR</div>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="movie-list-item">
+                            <img src="images/salt.png" alt="Salt" class="movie-list-item-img">
+                            <div class="movie-list-item-title">SALT</div>
                             <button class="movie-list-item-button">Watch</button>
                         </div>
                     </td>
@@ -176,44 +229,65 @@
                 <tr>
                     <td>
                         <div class="movie-list-item">
-                            <img src="img/unchartered.png" alt="Uncharted" class="movie-list-item-img">
+                            <img src="images/unchartered.png" alt="Uncharted" class="movie-list-item-img">
                             <div class="movie-list-item-title">UNCHARTED</div>
                             <button class="movie-list-item-button">Watch</button>
                         </div>
                     </td>
                     <td>
                         <div class="movie-list-item">
-                            <img src="img/quite place.png" alt="A Quiet Place" class="movie-list-item-img">
+                            <img src="images/quite place.png" alt="A Quiet Place" class="movie-list-item-img">
                             <div class="movie-list-item-title">A QUIET PLACE</div>
                             <button class="movie-list-item-button">Watch</button>
                         </div>
                     </td>
                     <td>
                         <div class="movie-list-item">
-                            <img src="img/awake.png" alt="Awake" class="movie-list-item-img">
+                            <img src="images/awake.png" alt="Awake" class="movie-list-item-img">
                             <div class="movie-list-item-title">AWAKE</div>
                             <button class="movie-list-item-button">Watch</button>
                         </div>
                     </td>
                     <td>
                         <div class="movie-list-item">
-                            <img src="img/creed.png" alt="Creed" class="movie-list-item-img">
+                            <img src="images/creed.png" alt="Creed" class="movie-list-item-img">
                             <div class="movie-list-item-title">CREED</div>
                             <button class="movie-list-item-button">Watch</button>
                         </div>
                     </td>
                     <td>
                         <div class="movie-list-item">
-                            <img src="img/lucky one.png" alt="The Lucky One" class="movie-list-item-img">
+                            <img src="images/lucky one.png" alt="The Lucky One" class="movie-list-item-img">
                             <div class="movie-list-item-title">THE LUCKY ONE</div>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="movie-list-item">
+                            <img src="images/red notice.png" alt="Red notice" class="movie-list-item-img">
+                            <div class="movie-list-item-title">RED NOTICE</div>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="movie-list-item">
+                            <img src="images/passengers.png" alt="Passengers" class="movie-list-item-img">
+                            <div class="movie-list-item-title">PASSENGERS</div>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="movie-list-item">
+                            <img src="images/night teeth.png" alt="Night teeth" class="movie-list-item-img">
+                            <div class="movie-list-item-title">NIGHT TEETH</div>
                             <button class="movie-list-item-button">Watch</button>
                         </div>
                     </td>
                 </tr>
             </tbody>
         </table>
-    </main>
-
+    </section>
+    <script src="script.js"></script>
     <footer>
         <p>&copy; 2024 Warner Bros. All rights reserved.</p>
         <p>Follow us</p>
@@ -224,7 +298,5 @@
         <a href="https://www.linkedin.com/company/warner-bros-entertainment" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>&nbsp;&nbsp;&nbsp;
         <a href="https://www.pinterest.com/warnerbros" target="_blank" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>&nbsp;&nbsp;&nbsp;
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
